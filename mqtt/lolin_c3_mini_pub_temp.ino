@@ -6,7 +6,7 @@ const char* password = "730124go";
 const char* serverIPAddr = "test.mosquitto.org";
 
 const char* clientId = "ria_lolin_c3_mini_01";
-const char * topic = "Riatech/A/Line1/Temp";
+const char * topic = "Riatech/Factory_A/Line1/Temp";
 
 WiFiClient wifiClient; 
 PubSubClient client(serverIPAddr, 1883, wifiClient);
