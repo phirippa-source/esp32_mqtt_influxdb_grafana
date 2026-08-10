@@ -24,7 +24,7 @@ PubSubClient mqttClient(brokerAddress, 1883, onMessage, wifiClient);
 
 void setup() {
     Serial.begin(115200);
-
+    delay(1000); // 시리얼 모니터 연결을 기다림
     Serial.println("Connecting to Wi-Fi: " + String(ssid));
 
     WiFi.begin(ssid, password);
