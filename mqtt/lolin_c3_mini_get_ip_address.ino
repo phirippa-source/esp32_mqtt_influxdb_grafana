@@ -10,7 +10,6 @@ void setup() {
 
     // 먼저 Wi-Fi 연결을 시작한다.
     WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
-    // WiFi.setTxPower(WIFI_POWER_8_5dBm);   // LOLIN C3 Mini V1.0.0 권장 설정
 
     while (WiFi.status() != WL_CONNECTED) {
         delay(500);
