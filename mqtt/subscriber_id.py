@@ -8,7 +8,6 @@ def on_message(client, userdata, msg):
     print(msg.topic + ':' + str(msg.payload))
 
 client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
-# ID(username)와 PASSWORD(password)를 지정
 client.username_pw_set(username='ship', password='1234')
 
 client.on_connect = on_connect
