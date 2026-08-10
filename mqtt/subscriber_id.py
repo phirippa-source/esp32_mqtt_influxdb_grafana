@@ -1,4 +1,4 @@
-  GNU nano 7.2                        subscriber_id.py                                  import paho.mqtt.client as mqtt
+import paho.mqtt.client as mqtt
 
 def on_connect(client, userdata, flag, reason_code, properties):
     print('Connect with result code : ' + str(reason_code))
