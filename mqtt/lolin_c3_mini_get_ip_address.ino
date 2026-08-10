@@ -8,9 +8,9 @@ void setup() {
 
     Serial.println("Wi-Fi 연결 테스트");
 
-    // 먼저 Wi-Fi 연결을 시작한다.
-    WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
-
+    WiFi.begin(WIFI_SSID, WIFI_PASSWORD);    // 먼저 Wi-Fi 연결을 시작한다.
+    WiFi.setTxPower(WIFI_POWER_8_5dBm);     // LOLIN C3 Mini의 Wi-Fi 안정성을 위해 송신 출력 제한
+    
     while (WiFi.status() != WL_CONNECTED) {
         delay(500);
         Serial.print(".");
