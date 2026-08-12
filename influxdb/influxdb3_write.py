@@ -3,9 +3,9 @@ import random
 import time
 
 client = InfluxDBClient3(
-        host="http://192.168.2.8:8181",
-        token="apiv3_xicSuKg7aBprci2PnxRFgKwXD0fRh995RhL78U-voI6cukfqCV4zNZJ1Ns6zDaPQd8GjePqJZy4Kqxqcz3hVuA",
-        database="dbtest"
+        host="http://<YOUR SERVER IP ADDRESS>:8181",
+        token="<YOUR TOKEN>",
+        database="<YOUR DATABASE"
         )
 
 while True:
