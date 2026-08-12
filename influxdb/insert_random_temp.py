@@ -2,9 +2,9 @@ import requests
 import random
 import time
 
-url = "http://192.168.2.8:8181/api/v3/write_lp"
-database = "dbtest"
-token = "apiv3_xicSuKg7aBprci2PnxRFgKwXD0fRh995RhL78U-voI6cukfqCV4zNZJ1Ns6zDaPQd8GjePqJZy4Kqxqcz3hVuA"
+url = "http://<YOUR Server IP Address>:8181/api/v3/write_lp"
+database = "<DATABASE NAME"
+token = "<YOUR TOKEN"
 
 headers = {
     "Authorization": f"Bearer {token}"
