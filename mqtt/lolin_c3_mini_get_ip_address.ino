@@ -1,11 +1,11 @@
 #include <WiFi.h>
 
-const char* WIFI_SSID = "RiaSummer2G";
-const char* WIFI_PASSWORD = "730124go";
+const char* WIFI_SSID = "<공유기 이름>";
+const char* WIFI_PASSWORD = "<공유기 암호>";
 
 void setup() {
     Serial.begin(115200);
-
+    delay(1000);
     Serial.println("Wi-Fi 연결 테스트");
 
     WiFi.begin(WIFI_SSID, WIFI_PASSWORD);    // 먼저 Wi-Fi 연결을 시작한다.
