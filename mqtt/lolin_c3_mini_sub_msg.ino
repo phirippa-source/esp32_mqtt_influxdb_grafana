@@ -14,8 +14,8 @@ void onMessage(char* topic, byte* payload, unsigned int length) {
     for (int i = 0; i < length; i++) {
         message += (char)payload[i];
     }
-    Serial.println("Topic: " + String(topic));
-    Serial.println("Message: " + message);
+    Serial.print("Topic: " + String(topic));
+    Serial.println("\tMessage: " + message);
 }
 
 WiFiClient wifiClient;
