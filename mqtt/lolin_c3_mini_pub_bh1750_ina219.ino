@@ -42,7 +42,7 @@ const int I2C_SCL = 10;
 // ------------------------------------------------------------
 // Publish settings
 // ------------------------------------------------------------
-const unsigned long PUBLISH_INTERVAL_MS = 1000;
+const unsigned long PUBLISH_INTERVAL_MS = 2000;
 unsigned long previousPublishTime = 0;
 
 
