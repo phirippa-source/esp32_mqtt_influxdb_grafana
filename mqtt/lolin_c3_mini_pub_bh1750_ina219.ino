@@ -28,9 +28,9 @@ const char* userId = "ship";
 const char* userPw = "1234";
 const char* clientId = "ria_lolin_c3_mini_01";
 
-const char* topicLux = "Riatech/A/Line1/Lux";
-const char* topicVoltage = "Riatech/A/Line1/Voltage";
-const char* topicCurrent = "Riatech/A/Line1/Current";
+const char* topicLux = "Riatech/Line1/Lux";
+const char* topicVoltage = "Riatech/Line1/Voltage";
+const char* topicCurrent = "Riatech/Line1/Current";
 
 
 // ------------------------------------------------------------
