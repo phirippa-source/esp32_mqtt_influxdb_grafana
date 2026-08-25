@@ -7,7 +7,7 @@ const char* brokerAddress = "192.168.2.8";
 const char* brokerUser = "ship";
 const char* brokerPassword = "1234";
 const char* clientId = "ria_lolin_c3_mini_sub_01";
-const char* topic = "Riatech/A/Line1/Led";
+const char* topic = "Riatech/Line1/Led";
 
 void onMessage(char* topic, byte* payload, unsigned int length) {
     String message = "";
