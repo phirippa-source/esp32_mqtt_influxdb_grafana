@@ -2,10 +2,10 @@ import json
 import paho.mqtt.client as mqtt
 from influxdb_client_3 import InfluxDBClient3, Point
 
-MQTT_BROKER = "<BROKER의 IP 주소>"
+MQTT_BROKER = "192.168.2.4"    # BROKER의 IP 주소
 MQTT_TOPIC = "Riatech/Line1/SensorData"
 
-INFLUX_HOST = "http://<influxdb 서버 주소>:8181"
+INFLUX_HOST = "http://192.168.2.4:8181"    # http://<influxdb 서버 주소>:8181
 INFLUX_TOKEN = "<토큰>"   
 INFLUX_DATABASE = "riatech_factory"
 
@@ -20,6 +20,7 @@ def on_connect(client, userdata, flags, reason_code, properties):
     client.subscribe(MQTT_TOPIC)
 
 def on_message(client, userdata, msg):
+    print(msg.topic + ':' + str(msg.payload(), end='\t')
     data = json.loads(msg.payload.decode())
 
     lux = data["lux"]
