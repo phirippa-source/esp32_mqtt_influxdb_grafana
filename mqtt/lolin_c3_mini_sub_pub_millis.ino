@@ -12,8 +12,8 @@ const char* brokerAddress = "192.168.2.8";
 const char* brokerUser = "ship";
 const char* brokerPassword = "1234";
 const char* clientId = "ria_lolin_c3_mini_sub_pub_01";
-const char* topicSub = "Riatech/A/Line1/Led";
-const char* topicPub = "Riatech/A/Line1/Lux";
+const char* topicSub = "Riatech/Line1/Led";
+const char* topicPub = "Riatech/Line1/Lux";
 unsigned long int pre_time, current_time;
 
 #define LED_PIN     7
@@ -26,8 +26,8 @@ void onMessage(char* topic, byte* payload, unsigned int length) {
         message += (char)payload[i];
     }
 
-    Serial.println("Topic: " + String(topic));
-    Serial.println("Message: " + message);
+    Serial.print("Topic: " + String(topic));
+    Serial.println("\tMessage: " + message);
 
     if (message == "on" || message == "On") {
         led.setPixelColor(0, led.Color(255,0,0));   // 빨강
