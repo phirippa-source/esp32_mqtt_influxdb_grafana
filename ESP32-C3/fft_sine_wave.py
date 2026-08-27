@@ -21,7 +21,8 @@ t = np.arange(0, duration, 1 / fs)
 y1 = A1 * np.sin(2 * np.pi * f1 * t)
 y2 = A2 * np.sin(2 * np.pi * f2 * t)
 
-y = y1 + y2
+#y = y1 + y2
+y = y1
 
 # --------------------------------------------------
 # FFT
